@@ -1,0 +1,40 @@
+<!-- <img src="assets/logo1.png" alt="" width="200px" height="200px"> -->
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title> 메인 </ion-title>
+  </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+  <h1>은정욱 기말앱</h1>
+  <h3>P프렌즈</h3>
+  <ion-grid>
+  <ion-row>
+  <ion-col align-self-center>
+  <ion-button
+  [routerLink]="['/register']"
+  size="large"
+  expand="block"
+  color="primary"
+  >사용자 등록</ion-button>
+  <br />
+  <ion-button
+  [routerLink]="['/login']"
+  size="large"
+  expand="block"
+  color="success"
+  >로그인</ion-button>
+  <br />
+  <ion-button
+  (click)="onLogout()"
+  size="large"
+  expand="block"
+  color="danger"
+  >로그아웃</ion-button>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+  </ion-content>
