@@ -12,6 +12,7 @@ export class RegisterPage implements OnInit {
   email: string;
   username: string;
   password: string;
+  password2: string;
 
   constructor(private authService: AuthService, private router: Router) { }
 
@@ -26,6 +27,7 @@ export class RegisterPage implements OnInit {
     ,
     password: this.password
     ,
+    password2: this.password2
     }; // Register User 사용자 등록
     this.authService.registerUser(user).subscribe((data) => {
     if (data.success) {

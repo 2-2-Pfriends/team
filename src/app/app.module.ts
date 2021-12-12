@@ -10,6 +10,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { JwtModule } from '@auth0/angular-jwt';
 
+// import {
+//   FlashMessagesModule,
+//   FlashMessagesService,
+// } from 'angular2-flash-messages';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

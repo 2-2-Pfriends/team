@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Home', url: '/home', icon: 'home' },
-    { title: 'Register', url: '/register', icon: 'person-add' },
-    { title: 'Login', url: '/login', icon: 'enter' },
-    { title: 'Dashboard', url: '/dashboard', icon: 'card' },
-    { title: 'Profile', url: '/profile', icon: 'body' },
+    { title: '주차 현황', url: '/home', icon: 'home' },
+    { title: '예약 확인', url: '/register', icon: 'person-add' },
+    { title: '', url: '/login', icon: 'enter' },
+    { title: '계정 수정', url: '/dashboard', icon: 'card' },
+    { title: '앱 정보', url: '/profile', icon: 'body' },
+    { title: '계정 찾기', url: '/forgot-id', icon: 'body' }
  ];
   constructor() {}
 }
