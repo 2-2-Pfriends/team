@@ -12,7 +12,7 @@ export class AppComponent {
     { title: '계정 정보', url: '/dashboard', icon: 'card' },
     { title: '계정 정보2', url: '/profile', icon: 'id-card' },
     { title: '계정 찾기', url: '/forgot-id', icon: 'key' },
-    { title: '주차 현황', url: '/confirmation', icon: 'car' }
+    { title: '주차 현황', url: '/confirmation', icon: 'car' },
  ];
   constructor() {}
 }
