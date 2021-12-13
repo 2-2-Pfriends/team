@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+import {
+  FlashMessagesModule,
+  FlashMessagesService,
+} from 'angular2-flash-messages';
+import { ValidateService } from './services/validate.service';
 const routes: Routes = [
   {
     path: '',
@@ -30,12 +34,16 @@ const routes: Routes = [
   {
     path: 'forgot-id',
     loadChildren: () => import('./forgot-id/forgot-id.module').then( m => m.ForgotIdPageModule)
-  }
+  },
+  {
+    path: 'confirmation',
+    loadChildren: () => import('./confirmation/confirmation.module').then( m => m.ConfirmationPageModule)
+  },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules,  })
   ],
   exports: [RouterModule]
 })
